@@ -12,7 +12,7 @@ export const reducer = (state, action) => {
       return [
         ...state,
         {
-          item: action.item,
+          item: action.payload,
           completed: false,
           id: Date.now(),
         },
