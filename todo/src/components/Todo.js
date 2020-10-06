@@ -1,6 +1,7 @@
 import React, { useState, useReducer } from "react";
 import { initialState, reducer } from "../reducers/TodoReducer";
 
+
 const Todo = () => {
   const [newTodo, setNewTodo] = useState("");
   const [state, dispatch] = useReducer(reducer, initialState);
@@ -12,6 +13,7 @@ const Todo = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
+    setNewTodo('')
   };
 
   return (
